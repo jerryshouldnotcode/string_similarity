@@ -1,5 +1,7 @@
 ''' measures the minimum number of single-character edits needed 
     to change one string to the other
+
+    a really good read on this: https://medium.com/@ethannam/understanding-the-levenshtein-distance-equation-for-beginners-c4285a5604f0
 '''
 
 def levenshtein(a, b):
