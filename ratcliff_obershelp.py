@@ -32,7 +32,6 @@ def ratcliff_obershelp(a, b):
         if longest:  # only if we found a common substring
             
             # add to bigger list for later
-            print(f"Found LCS: '{longest}'")
             long_substrings.append(longest)
 
             # Split both strings around the LCS
@@ -49,16 +48,11 @@ def ratcliff_obershelp(a, b):
     # add up the lengths of all found LCS, divide by total length of both strings 
     long_substrings = find_longest_common_substring(a, b, [])
 
+    for str in long_substrings:
+        total_substr_length += len(str)
     
-    try:
-        for str in long_substrings:
-            total_substr_length += len(str)
-    except TypeError:
-        total_substr_length 
-    
-    print(f"Total LCS length: {total_substr_length}")
-    print(f"Total string length: {total_length}")
-    return 2 * (total_substr_length/total_length) # formula
+    # formula
+    return 2 * (total_substr_length/total_length) 
 
    
 # word1 = input("Enter a word: ")
