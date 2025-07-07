@@ -53,8 +53,3 @@ def ratcliff_obershelp(a, b):
     
     # formula
     return 2 * (total_substr_length/total_length) 
-
-   
-# word1 = input("Enter a word: ")
-# word2 = input("Enter a word: ")
-# print(f'The Similarity Ratio between {word1} and {word2} is: {ratcliff_obershelp(word1, word2)}')

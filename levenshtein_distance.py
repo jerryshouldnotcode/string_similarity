@@ -47,15 +47,6 @@ def levenshtein(a, b):
     return matrix[len(a)][len(b)] # the final answer 
                 
 
-
-# word1 = input("Enter a word: ")
-# word2 = input("Enter a word: ")
-
-# # for consistency sake, without messing the printback
-# lev_dist = levenshtein(word1.lower().strip(), word2.lower().strip())
-# print(f'The Levenshtein Distance between {word1} and {word2} is: {lev_dist}')
-
-
 # this took a minute lol
         
 
